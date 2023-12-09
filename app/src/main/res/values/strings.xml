@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AcademyLessons</string>
+
+    // OnBoarding
+    <string name="onboarding_title">Sweets Ordering App</string>
+    <string name="onboarding_description">Order your favorite desert \n Here!</string>
+    <string name="onboarding_get_start_txt">Get started</string>
+
+    // MainScreen
+    <string name="main_screen_tab_all_text">All</string>
+    <string name="main_screen_tab_sweets_text">Sweets</string>
+    <string name="main_screen_tab_cakes_text">Cakes</string>
+    <string name="main_screen_tab_candey_text">Candey</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

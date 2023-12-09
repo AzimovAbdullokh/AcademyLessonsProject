@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/onBoardingScreenFragment">
+
+
+    <fragment
+        android:id="@+id/onBoardingScreenFragment"
+        android:name="com.example.academylessons.presentation.onboarding_screen.OnBoardingScreenFragment"
+        android:label="fragment_on_boarding_screen"
+        tools:layout="@layout/fragment_on_boarding_screen" >
+        <action
+            android:id="@+id/action_onBoardingScreenFragment_to_mainScreenFragment"
+            app:destination="@id/mainScreenFragment"
+            app:enterAnim="@anim/entrance_animation"
+            app:exitAnim="@anim/exit_animation"
+            app:popEnterAnim="@anim/entrance_animation"
+            app:popExitAnim="@anim/exit_animation" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainScreenFragment"
+        android:name="com.example.academylessons.presentation.main_screen.MainScreenFragment"
+        android:label="fragment_main_screen"
+        tools:layout="@layout/fragment_main_screen" >
+        <action
+            android:id="@+id/action_mainScreenFragment_to_foodDetailsFragment"
+            app:destination="@id/foodDetailsFragment" />
+        <action
+            android:id="@+id/action_mainScreenFragment_to_foodCartScreenFragment"
+            app:destination="@id/foodCartScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodDetailsFragment"
+        android:name="com.example.academylessons.presentation.details_screen.FoodDetailsFragment"
+        android:label="fragment_food_details"
+        tools:layout="@layout/fragment_food_details" />
+    <fragment
+        android:id="@+id/foodCartScreenFragment"
+        android:name="com.example.academylessons.presentation.cart_screen.FoodCartScreenFragment"
+        android:label="fragment_food_cart_screen"
+        tools:layout="@layout/fragment_food_cart_screen" />
+</navigation>
